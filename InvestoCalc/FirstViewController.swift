@@ -10,9 +10,14 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    @IBOutlet var sharePrice: UITextField!
+    @IBOutlet var price: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view, typically from a nib.\
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
