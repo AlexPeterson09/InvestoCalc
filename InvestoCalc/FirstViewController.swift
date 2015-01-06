@@ -9,9 +9,15 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
-    @IBOutlet var sharePrice: UITextField!
-    @IBOutlet var price: UILabel!
+    
+    @IBOutlet weak var priceDisplay: UILabel!
+    @IBOutlet weak var priceIn: UITextField!
+    @IBAction func submit(sender: AnyObject) {
+        var input=priceIn.text;
+        let inputInt = input.toInt()
+        priceDisplay.text = toString(inputInt)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
