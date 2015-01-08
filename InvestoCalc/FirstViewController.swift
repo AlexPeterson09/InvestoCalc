@@ -12,10 +12,20 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var priceDisplay: UILabel!
     @IBOutlet weak var priceIn: UITextField!
+    @IBOutlet weak var buyFeeIn: UITextField!
+    @IBOutlet weak var sellFeeIn: UITextField!
+    
     @IBAction func submit(sender: AnyObject) {
-        var input=priceIn.text;
-        let inputInt = input.toInt()
-        priceDisplay.text = toString(inputInt)
+        
+        var input=priceIn.text.toInt()
+        var buyFee = buyFeeIn.text
+        
+        //var fees = buyFee.text.toInt() + sellFee.text.toInt()
+        
+        //var inputInt = input.toInt()
+        //var output = inputInt! + 2
+        priceDisplay.text = toString(input)
+        
     }
     
     
@@ -30,6 +40,7 @@ class FirstViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
 
 
 }
