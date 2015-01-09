@@ -10,7 +10,7 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    @IBOutlet weak var priceDisplay: UILabel!
+    @IBOutlet weak var fullPriceDisplay1: UILabel!
     @IBOutlet weak var priceIn: UITextField!
     @IBOutlet weak var buyFeeIn: UITextField!
     @IBOutlet weak var sellFeeIn: UITextField!
@@ -18,13 +18,13 @@ class FirstViewController: UIViewController {
     @IBAction func submit(sender: AnyObject) {
         
         var input=priceIn.text.toInt()
-        var buyFee = buyFeeIn.text
+        var buyFee = buyFeeIn.text.toInt()
+        var sellFee = sellFeeIn.text.toInt()
+        var fees = buyFee! + sellFee!
         
-        //var fees = buyFee.text.toInt() + sellFee.text.toInt()
+        var perToEven: Double = (Double(fees)/Double(input!))*100
         
-        //var inputInt = input.toInt()
-        //var output = inputInt! + 2
-        priceDisplay.text = toString(input)
+        fullPriceDisplay1.text = toString(perToEven) + "%"
         
     }
     
