@@ -36,6 +36,8 @@ class FirstViewController: UIViewController {
         
         fullPriceDisplay1.text = NSString(format: "%.2f", perToEven) + "%"
         
+        //loop?
+        
     }
     
     
