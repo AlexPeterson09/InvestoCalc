@@ -27,16 +27,26 @@ class FirstViewController: UIViewController {
 
     @IBAction func submit(sender: AnyObject) {
         
-        var input=priceIn.text.toInt()
-        var buyFee = buyFeeIn.text.toInt()
-        var sellFee = sellFeeIn.text.toInt()
-        var fees = buyFee! + sellFee!
+        var input=priceIn.text
+        var buyFee = buyFeeIn.text
+        var sellFee = sellFeeIn.text
+        //var fees = buyFee! + sellFee!
         
-        var perToEven: Double = (Double(fees)/Double(input!))*100
+        //var perToEven: Double = (Double(fees)/Double(input!))*100
         
-        fullPriceDisplay1.text = NSString(format: "%.2f", perToEven) + "%"
+        //fullPriceDisplay1.text = NSString(format: "%.2f", perToEven) + "%"
         
         //loop?
+        
+        
+        
+        func findFullPrice(fees: Double, price: Double) ->Double {
+            
+            return fees/price
+            
+        }
+        
+        findFullPrice(buyFee.doubleValue()+sellFee.doubleValue(), input.doubleValue())
         
     }
     
