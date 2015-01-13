@@ -179,6 +179,7 @@
                     <connections>
                         <outlet property="buyFeeIn" destination="Wkb-BX-3NI" id="lx0-FD-1Tg"/>
                         <outlet property="custSharesDisplay" destination="rMb-Yw-sua" id="7Jt-nd-Cd4"/>
+                        <outlet property="custSharesIn" destination="P4k-iu-V6w" id="1LX-hc-h7m"/>
                         <outlet property="fullPriceDisplay1" destination="t0V-G8-dEm" id="Fxa-p2-yaW"/>
                         <outlet property="fullPriceDisplay10" destination="f4P-rQ-b0B" id="qbb-30-3kb"/>
                         <outlet property="fullPriceDisplay2" destination="8Vy-4N-7Db" id="g53-og-eay"/>
