@@ -29,15 +29,17 @@ class FirstViewController: UIViewController {
     //displayList.append(fullPriceDisplay1)
     
     @IBAction func submit(sender: AnyObject) {
+       
+        custSharesDisplay.text = custSharesIn.text
         
-        var input = Double(priceIn.text)
-        var buyFee = Double(buyFeeIn.text.toInt()!)
-        var sellFee = Double(sellFeeIn.text.toInt()!)
+        var input = (priceIn.text as NSString).doubleValue
+        var buyFee = (buyFeeIn.text as NSString).doubleValue
+        var sellFee = (sellFeeIn.text as NSString).doubleValue
         var custShares = custSharesIn.text.toInt()
         
         func findFullPrice(fees: Double, price: Double, shares: Int, display: UILabel) {
             
-            var dub: Double = fees/(price*Double(shares))
+            var dub: Double = (fees/(price*Double(shares)))*100
             display.text = NSString(format: "%.2f", dub) + "%"
             
         }
