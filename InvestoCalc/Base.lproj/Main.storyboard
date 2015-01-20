@@ -257,8 +257,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="submit:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="6FX-I0-R1S"/>
-                                    <action selector="submit:" destination="9pv-A4-QxB" eventType="touchUpInside" id="egs-XE-DWl"/>
+                                    <action selector="submit:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="v1Y-7I-VkK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkS-sG-ejF">
@@ -274,9 +273,8 @@
                     <connections>
                         <outlet property="buyFeeIn" destination="RPB-cy-yw5" id="xK8-mF-hg9"/>
                         <outlet property="perGrowthIn" destination="kRl-tH-RLl" id="dyZ-HT-6nN"/>
-                        <outlet property="priceIn" destination="ZHp-5e-UD9" id="ERd-as-4D4"/>
+                        <outlet property="priceIn" destination="ZHp-5e-UD9" id="lAe-l1-8Hp"/>
                         <outlet property="sellFeeIn" destination="DpF-br-oee" id="dlI-60-23C"/>
-                        <outlet property="sharePriceIn" destination="ZHp-5e-UD9" id="CoX-hd-0mC"/>
                         <outlet property="sharesNeededOut" destination="QkS-sG-ejF" id="7iG-II-Ry7"/>
                     </connections>
                 </viewController>

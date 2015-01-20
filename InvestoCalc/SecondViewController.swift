@@ -22,12 +22,18 @@ class SecondViewController: UIViewController {
     
     @IBAction func submit(sender: AnyObject) {
         
-        var input = (priceIn.text as NSString).doubleValue
+        var price = (priceIn.text as NSString).doubleValue
         var buyFee = (buyFeeIn.text as NSString).doubleValue
         var sellFee = (sellFeeIn.text as NSString).doubleValue
-        //var custShares = custSharesIn.text.toInt()
+        var perGrowth = (perGrowthIn.text as NSString).doubleValue
 
-          //((10*F)/S)=G
+        //((10*F)/S)=G
+        //^NOT RIGHT;need to find # of shares, not % Growth(G)
+        //(((G/100)P)/F)=S
+        
+        sharesNeededOut.text = NSString(format: "%.2f",(((perGrowth/100)*price)/(buyFee+sellFee)))
+        //GOAL: Round UP to whole # of shares; display actuall # of shares in ()
+        //IDEA: if (Double(Shares) > Int(Shares)) then print: Int(Shares + 1); else print: Int(Shares)
         
         
     }
@@ -44,4 +50,3 @@ class SecondViewController: UIViewController {
 
 
 }
-
