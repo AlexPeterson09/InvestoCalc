@@ -31,10 +31,19 @@ class SecondViewController: UIViewController {
         //^NOT RIGHT;need to find # of shares, not % Growth(G)
         //(((G/100)P)/F)=S
         
-        sharesNeededOut.text = NSString(format: "%.2f",(((perGrowth/100)*price)/(buyFee+sellFee)))
+        var shares = ((perGrowth/100)*price)/(buyFee+sellFee)
+        
+        //NSString(format: "%.2f",(((perGrowth/100)*price)/(buyFee+sellFee)))
         //GOAL: Round UP to whole # of shares; display actuall # of shares in ()
         //IDEA: if (Double(Shares) > Int(Shares)) then print: Int(Shares + 1); else print: Int(Shares)
         
+        if (shares > Double(Int(shares))) {
+            shares = Double(Int(shares.advancedBy(1)))
+        } else {
+            shares = Double(Int(shares))
+        }
+        
+        sharesNeededOut.text = String(format:"%.1f", shares)
         
     }
     
