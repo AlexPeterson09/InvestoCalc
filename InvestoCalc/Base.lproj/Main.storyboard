@@ -257,7 +257,11 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+<<<<<<< Updated upstream
                                     <action selector="submit:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="v1Y-7I-VkK"/>
+=======
+                                    <action selector="submit:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="83K-2g-p7e"/>
+>>>>>>> Stashed changes
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkS-sG-ejF">
