@@ -25,7 +25,6 @@ class SecondViewController: UIViewController {
         var price = (priceIn.text as NSString).doubleValue
         var buyFee = (buyFeeIn.text as NSString).doubleValue
         var sellFee = (sellFeeIn.text as NSString).doubleValue
-<<<<<<< Updated upstream
         var perGrowth = (perGrowthIn.text as NSString).doubleValue
 
         //((10*F)/S)=G
@@ -35,12 +34,6 @@ class SecondViewController: UIViewController {
         sharesNeededOut.text = NSString(format: "%.2f",(((perGrowth/100)*price)/(buyFee+sellFee)))
         //GOAL: Round UP to whole # of shares; display actuall # of shares in ()
         //IDEA: if (Double(Shares) > Int(Shares)) then print: Int(Shares + 1); else print: Int(Shares)
-=======
-        //var custShares = custSharesIn.text.toInt()
-        //((10*F)/S)=G
-        
-        
->>>>>>> Stashed changes
         
         
     }
