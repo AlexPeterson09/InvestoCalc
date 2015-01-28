@@ -43,7 +43,8 @@ class SecondViewController: UIViewController {
             shares = Double(Int(shares))
         }
         
-        sharesNeededOut.text = String(format:"%.1f", shares)
+        sharesNeededOut.text = (String(format:"%.0f", shares)+"\n"+"shares")
+        
         
     }
     
