@@ -31,7 +31,7 @@ class SecondViewController: UIViewController {
         //^NOT RIGHT;need to find # of shares, not % Growth(G)
         //(((G/100)P)/F)=S
         
-        var shares = ((perGrowth/100)*price)/(buyFee+sellFee)
+        var shares = (buyFee+sellFee)/((perGrowth/100)*price)
         
         //NSString(format: "%.2f",(((perGrowth/100)*price)/(buyFee+sellFee)))
         //GOAL: Round UP to whole # of shares; display actuall # of shares in ()
