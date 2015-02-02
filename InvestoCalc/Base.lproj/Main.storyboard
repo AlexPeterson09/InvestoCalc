@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Growth-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="InvestoCalc" customModuleProvider="target" sceneMemberID="viewController">
@@ -178,7 +178,7 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Growth" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="buyFeeIn" destination="Wkb-BX-3NI" id="lx0-FD-1Tg"/>
                         <outlet property="custSharesDisplay" destination="rMb-Yw-sua" id="7Jt-nd-Cd4"/>
@@ -198,7 +198,7 @@
             </objects>
             <point key="canvasLocation" x="749.5" y="-320.5"/>
         </scene>
-        <!--Second-->
+        <!--Shares-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="InvestoCalc" customModuleProvider="target" sceneMemberID="viewController">
@@ -282,7 +282,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Shares" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="buyFeeIn" destination="RPB-cy-yw5" id="xK8-mF-hg9"/>
                         <outlet property="perGrowthIn" destination="kRl-tH-RLl" id="dyZ-HT-6nN"/>
