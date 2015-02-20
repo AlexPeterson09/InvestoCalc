@@ -8,7 +8,7 @@
 
 import UIKit
 //var displayList:[UILabel]
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, UITextFieldDelegate {
     
     //Data In
     @IBOutlet weak var priceIn: UITextField!
@@ -52,8 +52,13 @@ class FirstViewController: UIViewController {
         findFullPrice(buyFee+sellFee, input, 10, fullPriceDisplay10)
         findFullPrice(buyFee+sellFee, input, custShares!, fullPriceDisplayCust)
         
+        
+        
     }
     
+    override func touchesBegan(touches: (NSSet!), withEvent event: UIEvent) {
+        self.view.endEditing(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

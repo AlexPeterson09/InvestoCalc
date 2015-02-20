@@ -47,7 +47,11 @@ class SecondViewController: UIViewController {
         
         
     }
-    
+
+    override func touchesBegan(touches: (NSSet!), withEvent event: UIEvent) {
+        self.view.endEditing(true)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
