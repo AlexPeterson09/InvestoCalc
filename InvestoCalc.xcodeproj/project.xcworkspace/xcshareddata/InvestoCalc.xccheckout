@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>B0229F51-3B6C-4546-BA2E-51C98DDCE5C9</string>
 	<key>IDESourceControlProjectName</key>
-	<string>InvestoCalc</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>918FF3CEA4F9EF0FAF98506C8E67DBB3ACEFF69B</key>
 		<string>https://github.com/AlexPeterson09/InvestoCalc.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>InvestoCalc.xcodeproj</string>
+	<string>InvestoCalc.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>918FF3CEA4F9EF0FAF98506C8E67DBB3ACEFF69B</key>
